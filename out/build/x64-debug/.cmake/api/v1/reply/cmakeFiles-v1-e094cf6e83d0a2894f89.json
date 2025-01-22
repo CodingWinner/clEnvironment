@@ -142,6 +142,66 @@
 		},
 		{
 			"path" : "clEnvironment/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Coding/OpenCL/OpenCL-SDK/install/share/cmake/OpenCL/OpenCLConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Coding/OpenCL/OpenCL-SDK/install/share/cmake/OpenCL/OpenCLConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Coding/OpenCL/OpenCL-SDK/install/share/cmake/OpenCLHeaders/OpenCLHeadersConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Coding/OpenCL/OpenCL-SDK/install/share/cmake/OpenCLHeaders/OpenCLHeadersTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Coding/OpenCL/OpenCL-SDK/install/share/cmake/OpenCLICDLoader/OpenCLICDLoaderConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Coding/OpenCL/OpenCL-SDK/install/share/cmake/OpenCLICDLoader/OpenCLICDLoaderTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Coding/OpenCL/OpenCL-SDK/install/share/cmake/OpenCLICDLoader/OpenCLICDLoaderTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Coding/OpenCL/OpenCL-SDK/install/share/cmake/OpenCLHeadersCpp/OpenCLHeadersCppConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Coding/OpenCL/OpenCL-SDK/install/share/cmake/OpenCLHeadersCpp/OpenCLHeadersCppTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Coding/OpenCL/OpenCL-SDK/install/share/cmake/OpenCLUtils/OpenCLUtilsConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Coding/OpenCL/OpenCL-SDK/install/share/cmake/OpenCLUtils/OpenCLUtilsTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Coding/OpenCL/OpenCL-SDK/install/share/cmake/OpenCLUtils/OpenCLUtilsTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Coding/OpenCL/OpenCL-SDK/install/share/cmake/OpenCLUtilsCpp/OpenCLUtilsCppConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Coding/OpenCL/OpenCL-SDK/install/share/cmake/OpenCLUtilsCpp/OpenCLUtilsCppTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Coding/OpenCL/OpenCL-SDK/install/share/cmake/OpenCLUtilsCpp/OpenCLUtilsCppTargets-debug.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",

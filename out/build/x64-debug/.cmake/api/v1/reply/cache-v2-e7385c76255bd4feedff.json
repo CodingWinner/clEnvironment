@@ -2,6 +2,18 @@
 	"entries" : 
 	[
 		{
+			"name" : "CLBlast_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for CLBlast."
+				}
+			],
+			"type" : "PATH",
+			"value" : "C:/Coding/OpenCL/CLBlast/install/lib/cmake/CLBlast"
+		},
+		{
 			"name" : "CMAKE_AR",
 			"properties" : 
 			[
@@ -1066,6 +1078,30 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "CREATE_SHARED_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Create a shared or static library (off = static, on = shared)"
+				}
+			],
+			"type" : "BOOL",
+			"value" : "OFF"
+		},
+		{
+			"name" : "OpenCL_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for OpenCL."
+				}
+			],
+			"type" : "PATH",
+			"value" : "C:/Coding/OpenCL/OpenCL-SDK/install/share/cmake/OpenCL"
+		},
+		{
 			"name" : "clEnvironment_BINARY_DIR",
 			"properties" : 
 			[
@@ -1088,6 +1124,18 @@
 			],
 			"type" : "STATIC",
 			"value" : "ON"
+		},
+		{
+			"name" : "clEnvironment_LIB_DEPENDS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Dependencies for the target"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "general;OpenCL::OpenCL;"
 		},
 		{
 			"name" : "clEnvironment_SOURCE_DIR",

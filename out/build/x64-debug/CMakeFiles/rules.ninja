@@ -64,11 +64,11 @@ rule CXX_COMPILER__clEnvironment_unscanned_Debug
 
 
 #############################################
-# Rule for linking CXX executable.
+# Rule for linking CXX static library.
 
-rule CXX_EXECUTABLE_LINKER__clEnvironment_Debug
-  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=$OBJECT_DIR --rc="C:\PROGRA~2\Windows Kits\10\bin\10.0.22621.0\x64\rc.exe" --mt="C:\PROGRA~2\Windows Kits\10\bin\10.0.22621.0\x64\mt.exe" --manifests $MANIFESTS -- "C:\PROGRA~1\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\bin\Hostx64\x64\link.exe" /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
-  description = Linking CXX executable $TARGET_FILE
+rule CXX_STATIC_LIBRARY_LINKER__clEnvironment_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\PROGRA~1\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\bin\Hostx64\x64\lib.exe" /nologo $LINK_FLAGS /out:$TARGET_FILE $in && $POST_BUILD"
+  description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
 
 

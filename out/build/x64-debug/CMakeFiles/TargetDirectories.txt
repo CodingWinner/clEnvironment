@@ -1,0 +1,5 @@
+C:/Users/AJAYJ/source/repos/clEnvironment/out/build/x64-debug/CMakeFiles/edit_cache.dir
+C:/Users/AJAYJ/source/repos/clEnvironment/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/AJAYJ/source/repos/clEnvironment/out/build/x64-debug/clEnvironment/CMakeFiles/clEnvironment.dir
+C:/Users/AJAYJ/source/repos/clEnvironment/out/build/x64-debug/clEnvironment/CMakeFiles/edit_cache.dir
+C:/Users/AJAYJ/source/repos/clEnvironment/out/build/x64-debug/clEnvironment/CMakeFiles/rebuild_cache.dir

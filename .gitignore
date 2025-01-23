@@ -5,6 +5,10 @@
 
 build/
 install/
+.gitignore
+out/
+CMakePresets.json
+CMakeSettings.json
 
 # User-specific files
 *.rsuser

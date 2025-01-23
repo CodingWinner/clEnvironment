@@ -5,7 +5,7 @@
 
 build/
 install/
-.gitignore
+.gitattributes
 out/
 CMakePresets.json
 CMakeSettings.json

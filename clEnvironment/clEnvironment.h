@@ -3,6 +3,17 @@
 
 #pragma once
 
-#include <iostream>
+#include <CL/opencl.hpp>
 
-// TODO: Reference additional headers your program requires here.
+namespace clEnvironment {
+	class Environment {
+	protected:
+		virtual void updateStates(const cl::Buffer& actions) = 0;
+
+	public:
+		cl::Buffer states;
+		cl::Buffer reward;
+
+		Environment(const cl::Context context, const cl::Buffer& starting_states) : states(starting_states) {};
+	};
+}

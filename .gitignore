@@ -6,7 +6,6 @@
 build/
 install/
 .gitattributes
-out/build/x64-debug
 out/
 CMakePresets.json
 CMakeSettings.json

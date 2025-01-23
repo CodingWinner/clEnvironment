@@ -63,6 +63,36 @@ build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles\install.util: CUSTOM_COMMAND all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\AJAYJ\source\repos\clEnvironment\out\build\x64-debug && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles\install\local.util: CUSTOM_COMMAND all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\AJAYJ\source\repos\clEnvironment\out\build\x64-debug && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install\local: phony CMakeFiles\install\local.util
+
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
 # C:/Users/AJAYJ/source/repos/clEnvironment/CMakeLists.txt
@@ -125,6 +155,36 @@ build clEnvironment\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
   restat = 1
 
 build clEnvironment\rebuild_cache: phony clEnvironment\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build clEnvironment\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build clEnvironment\CMakeFiles\install.util: CUSTOM_COMMAND clEnvironment\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\AJAYJ\source\repos\clEnvironment\out\build\x64-debug\clEnvironment && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build clEnvironment\install: phony clEnvironment\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build clEnvironment\CMakeFiles\install\local.util: CUSTOM_COMMAND clEnvironment\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\AJAYJ\source\repos\clEnvironment\out\build\x64-debug\clEnvironment && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build clEnvironment\install\local: phony clEnvironment\CMakeFiles\install\local.util
 
 # =============================================================================
 # Target aliases.

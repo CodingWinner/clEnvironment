@@ -33,7 +33,7 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/AJAYJ/source/repos/clEnvironment/out/build/x64-debug/clEnvironment/clEnvironment.lib")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/install/lib" TYPE STATIC_LIBRARY FILES "C:/Users/AJAYJ/source/repos/clEnvironment/out/build/x64-debug/clEnvironment/clEnvironment.lib")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -41,6 +41,6 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/Users/AJAYJ/source/repos/clEnvironment/clEnvironment/include/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/install/include" TYPE DIRECTORY FILES "C:/Users/AJAYJ/source/repos/clEnvironment/clEnvironment/include/")
 endif()
 

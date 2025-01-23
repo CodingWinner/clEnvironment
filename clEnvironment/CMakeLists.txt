@@ -15,8 +15,8 @@ endif()
 target_link_libraries(clEnvironment PUBLIC OpenCL::OpenCL)
 target_include_directories(clEnvironment PUBLIC ${CMAKE_SOURCE_DIR})
 
-install(TARGETS clEnvironment DESTINATION lib)
-install(DIRECTORY include/ DESTINATION include)
+install(TARGETS clEnvironment DESTINATION install/lib)
+install(DIRECTORY include/ DESTINATION install/include)
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET clEnvironment PROPERTY CXX_STANDARD 20)

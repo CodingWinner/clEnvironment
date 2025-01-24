@@ -13,8 +13,14 @@ else()
 endif()
 
 target_link_libraries(clEnvironment PUBLIC OpenCL::OpenCL)
+
+set(INCLUDE_PATH include)
+if (NOT EXISTS ${INCLUDE_PATH})
+    set(INCLUDE_PATH install/include)
+endif()
+
 target_include_directories(clEnvironment PUBLIC
-    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/${INCLUDE_PATH}>
     $<INSTALL_INTERFACE:include>)
 
 install(TARGETS clEnvironment EXPORT clEnvironmentTargets DESTINATION install/lib)

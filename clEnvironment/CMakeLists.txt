@@ -21,7 +21,7 @@ endif()
 
 target_include_directories(clEnvironment PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/${INCLUDE_PATH}>
-    $<INSTALL_INTERFACE:include>)
+    $<INSTALL_INTERFACE:${INCLUDE_PATH}>)
 
 install(TARGETS clEnvironment EXPORT clEnvironmentTargets DESTINATION install/lib)
 install(DIRECTORY include/ DESTINATION install/include)

@@ -7,13 +7,11 @@
 
 namespace clEnvironment {
 	class Environment {
-	protected:
-		virtual void updateStates(const cl::Buffer& actions) = 0;
-
 	public:
 		cl::Buffer states;
 		cl::Buffer reward;
 
 		Environment(const cl::Context context, const cl::Buffer& starting_states) : states(starting_states) {};
+		virtual void updateStates(const cl::Buffer& actions) = 0;
 	};
 }

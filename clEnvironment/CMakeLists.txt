@@ -16,7 +16,11 @@ target_link_libraries(clEnvironment PUBLIC OpenCL::OpenCL)
 target_include_directories(clEnvironment PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:include>)
+target_include_directories(clEnvironment PUBLIC
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+    $<INSTALL_INTERFACE:include>)
 
+install(TARGETS clEnvironment EXPORT clEnvironmentTargets DESTINATION install/lib)
 install(TARGETS clEnvironment EXPORT clEnvironmentTargets DESTINATION install/lib)
 install(DIRECTORY include/ DESTINATION install/include)
 

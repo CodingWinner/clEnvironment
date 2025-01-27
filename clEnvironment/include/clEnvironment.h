@@ -15,7 +15,7 @@ namespace clEnvironment
 
 		Environment(const cl::Context context, const cl::Buffer &starting_states) : states(starting_states) {};
 		virtual void updateStates(const cl::Buffer &actions) = 0;
-		virtual const cl::Buffer &getStates() final { return states; }
-		virtual const cl::Buffer &getRewards() final { return reward; }
+		virtual const cl::Buffer &getStates() = 0;
+		virtual const cl::Buffer &getRewards() = 0;
 	};
 }

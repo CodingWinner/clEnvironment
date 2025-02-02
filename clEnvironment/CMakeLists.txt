@@ -14,22 +14,17 @@ endif()
 
 target_link_libraries(clEnvironment PUBLIC OpenCL::OpenCL)
 
-set(INCLUDE_PATH include)
-if (NOT EXISTS ${INCLUDE_PATH})
-    set(INCLUDE_PATH install/include)
-endif()
-
 target_include_directories(clEnvironment PUBLIC
-    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/${INCLUDE_PATH}>
-    $<INSTALL_INTERFACE:${INCLUDE_PATH}>)
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+    $<INSTALL_INTERFACE:include>)
 
-install(TARGETS clEnvironment EXPORT clEnvironmentTargets DESTINATION install/lib)
-install(DIRECTORY include/ DESTINATION install/include)
+install(TARGETS clEnvironment EXPORT clEnvironmentTargets DESTINATION lib)
+install(DIRECTORY include/ DESTINATION include)
 
 install(EXPORT clEnvironmentTargets
     FILE clEnvironment.cmake
     NAMESPACE clEnvironment::
-    DESTINATION install/lib/cmake/clEnvironment
+    DESTINATION lib/cmake/clEnvironment
 )
 
 include(CMakePackageConfigHelpers)
@@ -42,13 +37,13 @@ write_basic_package_version_file(
 configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/../cmake/clEnvironmentConfig.cmake.in"
     "${CMAKE_CURRENT_BINARY_DIR}/clEnvironmentConfig.cmake"
-    INSTALL_DESTINATION install/lib/cmake/clEnvironment
+    INSTALL_DESTINATION lib/cmake/clEnvironment
 )
 
 install(FILES
     "${CMAKE_CURRENT_BINARY_DIR}/clEnvironmentConfig.cmake"
     "${CMAKE_CURRENT_BINARY_DIR}/clEnvironmentConfigVersion.cmake"
-    DESTINATION install/lib/cmake/clEnvironment
+    DESTINATION lib/cmake/clEnvironment
 )
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
